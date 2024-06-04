@@ -1,0 +1,43 @@
+<app-header titulo="Input"></app-header>
+
+<ion-content>
+    <div class="contenedor" style="position: relative;">
+        <div class="locateInputs" style="border-radius: 50%; padding: 14%;">
+
+        <h1>Bienvenido al input</h1>
+
+        <!--ejemplo que sale en el ion-input de ionic-->
+        <ion-list>
+
+            <!--1. El primer input solo se usa html-->
+            <ion-item class="input1">
+            <ion-input fill="solid" labelPlacement="floating" label="Nombre" placeholder="Ingrese su nombre"></ion-input>
+            </ion-item>
+
+            <!--2. El segundo input también se implementa solo en html y se usa para implementar un gmail válido-->
+            <ion-item>
+            <ion-input
+                type="email"
+                fill="solid"
+                label="Email"
+                labelPlacement="floating"
+                placeholder="Ingrese un email válido"
+                errorText="Invalid email"
+                ngModel
+                email
+            ></ion-input>
+            </ion-item>
+
+            <!--3. Solo implementa números-->
+            <ion-item>
+            <ion-input fill="solid" labelPlacement="floating" label="Contraseña" type="password" value="password" placeholder="Ingrese su contraseña"></ion-input>
+            </ion-item>
+
+        </ion-list>
+        
+
+
+        </div>
+        
+    </div>
+</ion-content>

@@ -1,0 +1,31 @@
+<app-header titulo="Avatar"></app-header>
+
+<ion-content >
+    <!--le estoy dando un contorno de color blanco a la lista, los bordes los redondeo y un padding (cantidad de espacio de bordes)-->
+    <ion-list style="border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
+        <!--vamos a poner un encabezado de una lista y el slot dice que ira al principio-->
+        <ion-list-header slot="start" style= "border: 1px solid #ccc"> Mensajes </ion-list-header>
+    
+        <ion-item>
+            <!--aplicando el componente avatar-->
+            <ion-avatar>
+            <img src="assets/img/1.png">
+            </ion-avatar>
+            <ion-label>
+            <h2 style="margin: 10px;">Ash</h2>
+            <p style="margin: 10px;">Vamos a comer fresas con crema</p>
+            </ion-label>
+        </ion-item>
+
+        <ion-item>
+            <!--aplicando el componente avatar-->
+            <ion-avatar>
+            <img src="assets/img/2.jpg">
+            </ion-avatar>
+            <ion-label>
+            <h2 style="margin: 10px;">Distribuidor de chismes</h2>
+            <p style="margin: 10px;">Tu: Que mal me caes.</p>
+            </ion-label>
+        </ion-item>    
+    </ion-list>
+</ion-content>
